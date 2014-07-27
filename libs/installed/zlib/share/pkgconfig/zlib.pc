@@ -1,0 +1,13 @@
+prefix=C:/Users/polyfrag/Desktop/Projects/BattleComputer/aaa000/libs/win/installed/zlib
+exec_prefix=C:/Users/polyfrag/Desktop/Projects/BattleComputer/aaa000/libs/win/installed/zlib
+libdir=C:/Users/polyfrag/Desktop/Projects/BattleComputer/aaa000/libs/win/installed/zlib/lib
+sharedlibdir=C:/Users/polyfrag/Desktop/Projects/BattleComputer/aaa000/libs/win/installed/zlib/lib
+includedir=C:/Users/polyfrag/Desktop/Projects/BattleComputer/aaa000/libs/win/installed/zlib/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.7
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

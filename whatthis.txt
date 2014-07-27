@@ -1,0 +1,2 @@
+an attempt to upgrade existing corpstates with new terrain shading algorithms,
+water, etc. (reusing the original code).

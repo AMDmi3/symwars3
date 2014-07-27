@@ -1,0 +1,1 @@
+An idea I had to make an RTS where units and buildings were represented by billboards of unicode and made-up symbols

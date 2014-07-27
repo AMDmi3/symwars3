@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AD1BD195-6D12-4F4F-9C01-197ADD2C5A88}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Pathogen</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\libs\win\SDL2_net-2.0.0\include;$(SolutionDir)..\libs\win\SDL2-2.0.3\include;$(SolutionDir)..\libs\glew\include;$(SolutionDir)..\libs\lpng;$(SolutionDir)..\libs\;$(SolutionDir)..\libs\libzip-0.11.1\lib;$(SolutionDir)..\libs\jpeglib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\libs\win\SDL2_net-2.0.0\lib;$(SolutionDir)..\libs\win\SDL2-2.0.3\lib;$(SolutionDir)..\libs\glew\lib\Release\Win32;$(SolutionDir)..\libs\GL;$(SolutionDir)..\libs\zlib-1.2.5\build\Release;$(SolutionDir)..\libs\libzip-0.11.1\build\lib\Release;$(SolutionDir)..\libs\lpng\lib;$(SolutionDir)..\libs\jpeglib;$(LibraryPath)</LibraryPath>
+    <TargetName>SymWars3Dbg</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\libs\win\SDL2_net-2.0.0\include;$(SolutionDir)..\libs\win\SDL2-2.0.3\include;$(SolutionDir)..\libs\glew\include;$(SolutionDir)..\libs\lpng;$(SolutionDir)..\libs\jpeglib;$(SolutionDir)..\libs\libzip-0.11.1\lib;$(SolutionDir)..\libs\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\libs\win\SDL2_net-2.0.0\lib;$(SolutionDir)..\libs\win\SDL2-2.0.3\lib;$(SolutionDir)..\libs\glew\lib\Release\Win32;$(SolutionDir)..\libs\lpng\lib;$(SolutionDir)..\libs\jpeglib;$(SolutionDir)..\libs\zlib-1.2.5\build\Release;$(SolutionDir)..\libs\GL;$(SolutionDir)..\libs\libzip-0.11.1\build\lib\Release;$(LibraryPath)</LibraryPath>
+    <TargetName>SymWars3</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Libs\jpeglib;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Libs\jpeglib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Debug\$(TargetFileName)" "$(SolutionDir)..\..\testfolder\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Release\$(TargetFileName)" "$(SolutionDir)..\..\testfolder\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\ai\ai.cpp" />
+    <ClCompile Include="..\common\debug.cpp" />
+    <ClCompile Include="..\common\econ\balance.cpp" />
+    <ClCompile Include="..\common\econ\demand.cpp" />
+    <ClCompile Include="..\common\econ\utility.cpp" />
+    <ClCompile Include="..\common\gui\cursor.cpp" />
+    <ClCompile Include="..\common\gui\draw2d.cpp" />
+    <ClCompile Include="..\common\gui\font.cpp" />
+    <ClCompile Include="..\common\gui\gui.cpp" />
+    <ClCompile Include="..\common\gui\icon.cpp" />
+    <ClCompile Include="..\common\gui\inevent.cpp" />
+    <ClCompile Include="..\common\gui\richtext.cpp" />
+    <ClCompile Include="..\common\gui\sprite.cpp" />
+    <ClCompile Include="..\common\gui\viewlayer.cpp" />
+    <ClCompile Include="..\common\gui\widget.cpp" />
+    <ClCompile Include="..\common\gui\widgets\barbutton.cpp" />
+    <ClCompile Include="..\common\gui\widgets\button.cpp" />
+    <ClCompile Include="..\common\gui\widgets\checkbox.cpp" />
+    <ClCompile Include="..\common\gui\widgets\dropdowns.cpp" />
+    <ClCompile Include="..\common\gui\widgets\editbox.cpp" />
+    <ClCompile Include="..\common\gui\widgets\frame.cpp" />
+    <ClCompile Include="..\common\gui\widgets\hscrollbar.cpp" />
+    <ClCompile Include="..\common\gui\widgets\image.cpp" />
+    <ClCompile Include="..\common\gui\widgets\insdraw.cpp" />
+    <ClCompile Include="..\common\gui\widgets\link.cpp" />
+    <ClCompile Include="..\common\gui\widgets\listbox.cpp" />
+    <ClCompile Include="..\common\gui\widgets\spez\bottompanel.cpp" />
+    <ClCompile Include="..\common\gui\widgets\spez\buildpreview.cpp" />
+    <ClCompile Include="..\common\gui\widgets\spez\constructionview.cpp" />
+    <ClCompile Include="..\common\gui\widgets\spez\resticker.cpp" />
+    <ClCompile Include="..\common\gui\widgets\text.cpp" />
+    <ClCompile Include="..\common\gui\widgets\textarea.cpp" />
+    <ClCompile Include="..\common\gui\widgets\textblock.cpp" />
+    <ClCompile Include="..\common\gui\widgets\touchlistener.cpp" />
+    <ClCompile Include="..\common\gui\widgets\viewportw.cpp" />
+    <ClCompile Include="..\common\gui\widgets\vscrollbar.cpp" />
+    <ClCompile Include="..\common\gui\widgets\windoww.cpp" />
+    <ClCompile Include="..\common\math\3dmath.cpp" />
+    <ClCompile Include="..\common\math\barycentric.cpp" />
+    <ClCompile Include="..\common\math\brush.cpp" />
+    <ClCompile Include="..\common\math\camera.cpp" />
+    <ClCompile Include="..\common\math\edge.cpp" />
+    <ClCompile Include="..\common\math\fixmath.cpp" />
+    <ClCompile Include="..\common\math\frustum.cpp" />
+    <ClCompile Include="..\common\math\hmapmath.cpp" />
+    <ClCompile Include="..\common\math\line.cpp" />
+    <ClCompile Include="..\common\math\matrix.cpp" />
+    <ClCompile Include="..\common\math\physics.cpp" />
+    <ClCompile Include="..\common\math\plane3f.cpp" />
+    <ClCompile Include="..\common\math\plane2i.cpp" />
+    <ClCompile Include="..\common\math\polygon.cpp" />
+    <ClCompile Include="..\common\math\quaternion.cpp" />
+    <ClCompile Include="..\common\math\vec3f.cpp" />
+    <ClCompile Include="..\common\math\vec3i.cpp" />
+    <ClCompile Include="..\common\math\vec4f.cpp" />
+    <ClCompile Include="..\common\path\astarpath.cpp" />
+    <ClCompile Include="..\common\path\binheap.cpp" />
+    <ClCompile Include="..\common\path\collidertile.cpp" />
+    <ClCompile Include="..\common\path\jpsexpansion.cpp" />
+    <ClCompile Include="..\common\path\jpspartpath.cpp" />
+    <ClCompile Include="..\common\path\jpspath.cpp" />
+    <ClCompile Include="..\common\path\localavoid.cpp" />
+    <ClCompile Include="..\common\path\mempool.cpp" />
+    <ClCompile Include="..\common\path\partialpath.cpp" />
+    <ClCompile Include="..\common\path\pathdebug.cpp" />
+    <ClCompile Include="..\common\path\pathjob.cpp" />
+    <ClCompile Include="..\common\path\pathnode.cpp" />
+    <ClCompile Include="..\common\path\reconstructpath.cpp" />
+    <ClCompile Include="..\common\path\trip.cpp" />
+    <ClCompile Include="..\common\phys\collision.cpp" />
+    <ClCompile Include="..\common\phys\trace.cpp" />
+    <ClCompile Include="..\common\platform.cpp" />
+    <ClCompile Include="..\common\render\billboard.cpp" />
+    <ClCompile Include="..\common\render\dmdmodel.cpp" />
+    <ClCompile Include="..\common\render\foliage.cpp" />
+    <ClCompile Include="..\common\render\heightmap.cpp" />
+    <ClCompile Include="..\common\render\model.cpp" />
+    <ClCompile Include="..\common\render\ms3d.cpp" />
+    <ClCompile Include="..\common\render\particle.cpp" />
+    <ClCompile Include="..\common\render\projectile.cpp" />
+    <ClCompile Include="..\common\render\screenshot.cpp" />
+    <ClCompile Include="..\common\render\shader.cpp" />
+    <ClCompile Include="..\common\render\shadow.cpp" />
+    <ClCompile Include="..\common\render\skybox.cpp" />
+    <ClCompile Include="..\common\render\transaction.cpp" />
+    <ClCompile Include="..\common\render\vertexarray.cpp" />
+    <ClCompile Include="..\common\render\water.cpp" />
+    <ClCompile Include="..\common\save\savemap.cpp" />
+    <ClCompile Include="..\common\script\console.cpp" />
+    <ClCompile Include="..\common\script\script.cpp" />
+    <ClCompile Include="..\common\sim\build.cpp" />
+    <ClCompile Include="..\common\sim\building.cpp" />
+    <ClCompile Include="..\common\sim\buildingtype.cpp" />
+    <ClCompile Include="..\common\sim\connectable.cpp" />
+    <ClCompile Include="..\common\sim\deposit.cpp" />
+    <ClCompile Include="..\common\sim\infrastructure.cpp" />
+    <ClCompile Include="..\common\sim\job.cpp" />
+    <ClCompile Include="..\common\sim\labourer.cpp" />
+    <ClCompile Include="..\common\sim\crpipe.cpp" />
+    <ClCompile Include="..\common\sim\order.cpp" />
+    <ClCompile Include="..\common\sim\player.cpp" />
+    <ClCompile Include="..\common\sim\powl.cpp" />
+    <ClCompile Include="..\common\sim\resources.cpp" />
+    <ClCompile Include="..\common\sim\road.cpp" />
+    <ClCompile Include="..\common\sim\selection.cpp" />
+    <ClCompile Include="..\common\sim\sim.cpp" />
+    <ClCompile Include="..\common\sim\unit.cpp" />
+    <ClCompile Include="..\common\sim\unitmove.cpp" />
+    <ClCompile Include="..\common\sim\unittype.cpp" />
+    <ClCompile Include="..\common\sound\sound.cpp" />
+    <ClCompile Include="..\common\sys\unicode.cpp" />
+    <ClCompile Include="..\common\texture.cpp" />
+    <ClCompile Include="..\common\ustring.cpp" />
+    <ClCompile Include="..\common\utils.cpp" />
+    <ClCompile Include="..\common\window.cpp" />
+    <ClCompile Include="gmain.cpp" />
+    <ClCompile Include="gui\editorgui.cpp" />
+    <ClCompile Include="gui\ggui.cpp" />
+    <ClCompile Include="gui\gviewport.cpp" />
+    <ClCompile Include="gui\playgui.cpp" />
+    <ClCompile Include="keymap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\ai\ai.h" />
+    <ClInclude Include="..\common\debug.h" />
+    <ClInclude Include="..\common\econ\balance.h" />
+    <ClInclude Include="..\common\econ\demand.h" />
+    <ClInclude Include="..\common\econ\utility.h" />
+    <ClInclude Include="..\common\gui\cursor.h" />
+    <ClInclude Include="..\common\gui\draw2d.h" />
+    <ClInclude Include="..\common\gui\font.h" />
+    <ClInclude Include="..\common\gui\gui.h" />
+    <ClInclude Include="..\common\gui\icon.h" />
+    <ClInclude Include="..\common\gui\inevent.h" />
+    <ClInclude Include="..\common\gui\richtext.h" />
+    <ClInclude Include="..\common\gui\sprite.h" />
+    <ClInclude Include="..\common\gui\viewlayer.h" />
+    <ClInclude Include="..\common\gui\widget.h" />
+    <ClInclude Include="..\common\gui\widgets\barbutton.h" />
+    <ClInclude Include="..\common\gui\widgets\button.h" />
+    <ClInclude Include="..\common\gui\widgets\checkbox.h" />
+    <ClInclude Include="..\common\gui\widgets\dropdowns.h" />
+    <ClInclude Include="..\common\gui\widgets\editbox.h" />
+    <ClInclude Include="..\common\gui\widgets\frame.h" />
+    <ClInclude Include="..\common\gui\widgets\hscrollbar.h" />
+    <ClInclude Include="..\common\gui\widgets\image.h" />
+    <ClInclude Include="..\common\gui\widgets\insdraw.h" />
+    <ClInclude Include="..\common\gui\widgets\link.h" />
+    <ClInclude Include="..\common\gui\widgets\listbox.h" />
+    <ClInclude Include="..\common\gui\widgets\spez\bottompanel.h" />
+    <ClInclude Include="..\common\gui\widgets\spez\buildpreview.h" />
+    <ClInclude Include="..\common\gui\widgets\spez\constructionview.h" />
+    <ClInclude Include="..\common\gui\widgets\spez\resticker.h" />
+    <ClInclude Include="..\common\gui\widgets\text.h" />
+    <ClInclude Include="..\common\gui\widgets\textarea.h" />
+    <ClInclude Include="..\common\gui\widgets\textblock.h" />
+    <ClInclude Include="..\common\gui\widgets\touchlistener.h" />
+    <ClInclude Include="..\common\gui\widgets\viewportw.h" />
+    <ClInclude Include="..\common\gui\widgets\vscrollbar.h" />
+    <ClInclude Include="..\common\gui\widgets\windoww.h" />
+    <ClInclude Include="..\common\math\3dmath.h" />
+    <ClInclude Include="..\common\math\barycentric.h" />
+    <ClInclude Include="..\common\math\brush.h" />
+    <ClInclude Include="..\common\math\camera.h" />
+    <ClInclude Include="..\common\math\edge.h" />
+    <ClInclude Include="..\common\math\fixmath.h" />
+    <ClInclude Include="..\common\math\frustum.h" />
+    <ClInclude Include="..\common\math\hmapmath.h" />
+    <ClInclude Include="..\common\math\line.h" />
+    <ClInclude Include="..\common\math\matrix.h" />
+    <ClInclude Include="..\common\math\physics.h" />
+    <ClInclude Include="..\common\math\plane3f.h" />
+    <ClInclude Include="..\common\math\plane2i.h" />
+    <ClInclude Include="..\common\math\polygon.h" />
+    <ClInclude Include="..\common\math\quaternion.h" />
+    <ClInclude Include="..\common\math\triangle.h" />
+    <ClInclude Include="..\common\math\vec2f.h" />
+    <ClInclude Include="..\common\math\vec2i.h" />
+    <ClInclude Include="..\common\math\vec3f.h" />
+    <ClInclude Include="..\common\math\vec3i.h" />
+    <ClInclude Include="..\common\math\vec4f.h" />
+    <ClInclude Include="..\common\path\astarpath.h" />
+    <ClInclude Include="..\common\path\binheap.h" />
+    <ClInclude Include="..\common\path\collidertile.h" />
+    <ClInclude Include="..\common\path\jpsexpansion.h" />
+    <ClInclude Include="..\common\path\jpspartpath.h" />
+    <ClInclude Include="..\common\path\jpspath.h" />
+    <ClInclude Include="..\common\path\localavoid.h" />
+    <ClInclude Include="..\common\path\mempool.h" />
+    <ClInclude Include="..\common\path\partialpath.h" />
+    <ClInclude Include="..\common\path\pathdebug.h" />
+    <ClInclude Include="..\common\path\pathjob.h" />
+    <ClInclude Include="..\common\path\pathnode.h" />
+    <ClInclude Include="..\common\path\reconstructpath.h" />
+    <ClInclude Include="..\common\path\trip.h" />
+    <ClInclude Include="..\common\phys\collision.h" />
+    <ClInclude Include="..\common\phys\trace.h" />
+    <ClInclude Include="..\common\platform.h" />
+    <ClInclude Include="..\common\render\billboard.h" />
+    <ClInclude Include="..\common\render\dmdmodel.h" />
+    <ClInclude Include="..\common\render\foliage.h" />
+    <ClInclude Include="..\common\render\heightmap.h" />
+    <ClInclude Include="..\common\render\model.h" />
+    <ClInclude Include="..\common\render\ms3d.h" />
+    <ClInclude Include="..\common\render\particle.h" />
+    <ClInclude Include="..\common\render\projectile.h" />
+    <ClInclude Include="..\common\render\screenshot.h" />
+    <ClInclude Include="..\common\render\shader.h" />
+    <ClInclude Include="..\common\render\shadow.h" />
+    <ClInclude Include="..\common\render\skybox.h" />
+    <ClInclude Include="..\common\render\transaction.h" />
+    <ClInclude Include="..\common\render\vertexarray.h" />
+    <ClInclude Include="..\common\render\water.h" />
+    <ClInclude Include="..\common\save\savemap.h" />
+    <ClInclude Include="..\common\script\console.h" />
+    <ClInclude Include="..\common\script\script.h" />
+    <ClInclude Include="..\common\sim\build.h" />
+    <ClInclude Include="..\common\sim\building.h" />
+    <ClInclude Include="..\common\sim\buildingtype.h" />
+    <ClInclude Include="..\common\sim\connectable.h" />
+    <ClInclude Include="..\common\sim\deposit.h" />
+    <ClInclude Include="..\common\sim\infrastructure.h" />
+    <ClInclude Include="..\common\sim\job.h" />
+    <ClInclude Include="..\common\sim\labourer.h" />
+    <ClInclude Include="..\common\sim\crpipe.h" />
+    <ClInclude Include="..\common\sim\order.h" />
+    <ClInclude Include="..\common\sim\player.h" />
+    <ClInclude Include="..\common\sim\powl.h" />
+    <ClInclude Include="..\common\sim\resources.h" />
+    <ClInclude Include="..\common\sim\road.h" />
+    <ClInclude Include="..\common\sim\selection.h" />
+    <ClInclude Include="..\common\sim\sim.h" />
+    <ClInclude Include="..\common\sim\unit.h" />
+    <ClInclude Include="..\common\sim\unitmove.h" />
+    <ClInclude Include="..\common\sim\unittype.h" />
+    <ClInclude Include="..\common\sound\sound.h" />
+    <ClInclude Include="..\common\sys\unicode.h" />
+    <ClInclude Include="..\common\texture.h" />
+    <ClInclude Include="..\common\ustring.h" />
+    <ClInclude Include="..\common\utils.h" />
+    <ClInclude Include="..\common\window.h" />
+    <ClInclude Include="gmain.h" />
+    <ClInclude Include="gres.h" />
+    <ClInclude Include="gui\editorgui.h" />
+    <ClInclude Include="gui\ggui.h" />
+    <ClInclude Include="gui\gviewport.h" />
+    <ClInclude Include="gui\playgui.h" />
+    <ClInclude Include="keymap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

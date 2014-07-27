@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CorpStatesC" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/CorpStatesC" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++0x" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="GLEW" />
+					<Add library="SDL2" />
+					<Add library="png" />
+					<Add library="jpeg" />
+					<Add library="z" />
+					<Add library="zip" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c yes | cp &quot;$(PROJECT_DIR)$(TARGET_OUTPUT_FILE)&quot; &quot;$(PROJECT_DIR)../../testfolder/&quot;' />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/CorpStatesC" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++0x" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="GL" />
+					<Add library="GLU" />
+					<Add library="GLEW" />
+					<Add library="SDL2" />
+					<Add library="png" />
+					<Add library="jpeg" />
+					<Add library="z" />
+					<Add library="zip" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c yes | cp &quot;$(PROJECT_DIR)$(TARGET_OUTPUT_FILE)&quot; &quot;$(PROJECT_DIR)../../testfolder/&quot;' />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="libs/SDL2_net-2.0.0" />
+		</Compiler>
+		<Unit filename="../common/ai/astarpath.cpp" />
+		<Unit filename="../common/ai/astarpath.h" />
+		<Unit filename="../common/ai/binheap.cpp" />
+		<Unit filename="../common/ai/binheap.h" />
+		<Unit filename="../common/ai/collidertile.cpp" />
+		<Unit filename="../common/ai/collidertile.h" />
+		<Unit filename="../common/ai/jpsexpansion.cpp" />
+		<Unit filename="../common/ai/jpsexpansion.h" />
+		<Unit filename="../common/ai/jpspartpath.cpp" />
+		<Unit filename="../common/ai/jpspartpath.h" />
+		<Unit filename="../common/ai/jpspath.cpp" />
+		<Unit filename="../common/ai/jpspath.h" />
+		<Unit filename="../common/ai/localavoid.cpp" />
+		<Unit filename="../common/ai/localavoid.h" />
+		<Unit filename="../common/ai/mempool.cpp" />
+		<Unit filename="../common/ai/mempool.h" />
+		<Unit filename="../common/ai/partialpath.cpp" />
+		<Unit filename="../common/ai/partialpath.h" />
+		<Unit filename="../common/ai/pathdebug.cpp" />
+		<Unit filename="../common/ai/pathdebug.h" />
+		<Unit filename="../common/ai/pathjob.cpp" />
+		<Unit filename="../common/ai/pathjob.h" />
+		<Unit filename="../common/ai/pathnode.cpp" />
+		<Unit filename="../common/ai/pathnode.h" />
+		<Unit filename="../common/ai/reconstructpath.cpp" />
+		<Unit filename="../common/ai/reconstructpath.h" />
+		<Unit filename="../common/debug.cpp" />
+		<Unit filename="../common/debug.h" />
+		<Unit filename="../common/econ/demand.cpp" />
+		<Unit filename="../common/econ/demand.h" />
+		<Unit filename="../common/gui/cursor.cpp" />
+		<Unit filename="../common/gui/cursor.h" />
+		<Unit filename="../common/gui/draw2d.cpp" />
+		<Unit filename="../common/gui/draw2d.h" />
+		<Unit filename="../common/gui/font.cpp" />
+		<Unit filename="../common/gui/font.h" />
+		<Unit filename="../common/gui/gui.cpp" />
+		<Unit filename="../common/gui/gui.h" />
+		<Unit filename="../common/gui/icon.cpp" />
+		<Unit filename="../common/gui/icon.h" />
+		<Unit filename="../common/gui/inevent.cpp" />
+		<Unit filename="../common/gui/inevent.h" />
+		<Unit filename="../common/gui/richtext.cpp" />
+		<Unit filename="../common/gui/richtext.h" />
+		<Unit filename="../common/gui/sprite.cpp" />
+		<Unit filename="../common/gui/sprite.h" />
+		<Unit filename="../common/gui/viewlayer.cpp" />
+		<Unit filename="../common/gui/viewlayer.h" />
+		<Unit filename="../common/gui/widget.cpp" />
+		<Unit filename="../common/gui/widget.h" />
+		<Unit filename="../common/gui/widgets/barbutton.cpp" />
+		<Unit filename="../common/gui/widgets/barbutton.h" />
+		<Unit filename="../common/gui/widgets/button.cpp" />
+		<Unit filename="../common/gui/widgets/button.h" />
+		<Unit filename="../common/gui/widgets/checkbox.cpp" />
+		<Unit filename="../common/gui/widgets/checkbox.h" />
+		<Unit filename="../common/gui/widgets/dropdowns.cpp" />
+		<Unit filename="../common/gui/widgets/dropdowns.h" />
+		<Unit filename="../common/gui/widgets/editbox.cpp" />
+		<Unit filename="../common/gui/widgets/editbox.h" />
+		<Unit filename="../common/gui/widgets/frame.cpp" />
+		<Unit filename="../common/gui/widgets/frame.h" />
+		<Unit filename="../common/gui/widgets/hscrollbar.cpp" />
+		<Unit filename="../common/gui/widgets/hscrollbar.h" />
+		<Unit filename="../common/gui/widgets/image.cpp" />
+		<Unit filename="../common/gui/widgets/image.h" />
+		<Unit filename="../common/gui/widgets/insdraw.cpp" />
+		<Unit filename="../common/gui/widgets/insdraw.h" />
+		<Unit filename="../common/gui/widgets/link.cpp" />
+		<Unit filename="../common/gui/widgets/link.h" />
+		<Unit filename="../common/gui/widgets/listbox.cpp" />
+		<Unit filename="../common/gui/widgets/listbox.h" />
+		<Unit filename="../common/gui/widgets/spez/bottompanel.cpp" />
+		<Unit filename="../common/gui/widgets/spez/bottompanel.h" />
+		<Unit filename="../common/gui/widgets/spez/buildpreview.cpp" />
+		<Unit filename="../common/gui/widgets/spez/buildpreview.h" />
+		<Unit filename="../common/gui/widgets/spez/constructionview.cpp" />
+		<Unit filename="../common/gui/widgets/spez/constructionview.h" />
+		<Unit filename="../common/gui/widgets/spez/resticker.cpp" />
+		<Unit filename="../common/gui/widgets/spez/resticker.h" />
+		<Unit filename="../common/gui/widgets/text.cpp" />
+		<Unit filename="../common/gui/widgets/text.h" />
+		<Unit filename="../common/gui/widgets/textarea.cpp" />
+		<Unit filename="../common/gui/widgets/textarea.h" />
+		<Unit filename="../common/gui/widgets/textblock.cpp" />
+		<Unit filename="../common/gui/widgets/textblock.h" />
+		<Unit filename="../common/gui/widgets/touchlistener.cpp" />
+		<Unit filename="../common/gui/widgets/touchlistener.h" />
+		<Unit filename="../common/gui/widgets/viewportw.cpp" />
+		<Unit filename="../common/gui/widgets/viewportw.h" />
+		<Unit filename="../common/gui/widgets/vscrollbar.cpp" />
+		<Unit filename="../common/gui/widgets/vscrollbar.h" />
+		<Unit filename="../common/gui/widgets/windoww.cpp" />
+		<Unit filename="../common/gui/widgets/windoww.h" />
+		<Unit filename="../common/math/3dmath.cpp" />
+		<Unit filename="../common/math/3dmath.h" />
+		<Unit filename="../common/math/barycentric.cpp" />
+		<Unit filename="../common/math/barycentric.h" />
+		<Unit filename="../common/math/brush.cpp" />
+		<Unit filename="../common/math/brush.h" />
+		<Unit filename="../common/math/camera.cpp" />
+		<Unit filename="../common/math/camera.h" />
+		<Unit filename="../common/math/edge.cpp" />
+		<Unit filename="../common/math/edge.h" />
+		<Unit filename="../common/math/frustum.cpp" />
+		<Unit filename="../common/math/frustum.h" />
+		<Unit filename="../common/math/hmapmath.cpp" />
+		<Unit filename="../common/math/hmapmath.h" />
+		<Unit filename="../common/math/line.cpp" />
+		<Unit filename="../common/math/line.h" />
+		<Unit filename="../common/math/matrix.cpp" />
+		<Unit filename="../common/math/matrix.h" />
+		<Unit filename="../common/math/physics.cpp" />
+		<Unit filename="../common/math/physics.h" />
+		<Unit filename="../common/math/plane2i.cpp" />
+		<Unit filename="../common/math/plane2i.h" />
+		<Unit filename="../common/math/plane3f.cpp" />
+		<Unit filename="../common/math/plane3f.h" />
+		<Unit filename="../common/math/polygon.cpp" />
+		<Unit filename="../common/math/polygon.h" />
+		<Unit filename="../common/math/quaternion.cpp" />
+		<Unit filename="../common/math/quaternion.h" />
+		<Unit filename="../common/math/triangle.h" />
+		<Unit filename="../common/math/vec2f.h" />
+		<Unit filename="../common/math/vec2i.h" />
+		<Unit filename="../common/math/vec3f.cpp" />
+		<Unit filename="../common/math/vec3f.h" />
+		<Unit filename="../common/math/vec3i.cpp" />
+		<Unit filename="../common/math/vec3i.h" />
+		<Unit filename="../common/math/vec4f.cpp" />
+		<Unit filename="../common/math/vec4f.h" />
+		<Unit filename="../common/phys/collision.cpp" />
+		<Unit filename="../common/phys/collision.h" />
+		<Unit filename="../common/phys/trace.cpp" />
+		<Unit filename="../common/phys/trace.h" />
+		<Unit filename="../common/platform.cpp" />
+		<Unit filename="../common/platform.h" />
+		<Unit filename="../common/render/billboard.cpp" />
+		<Unit filename="../common/render/billboard.h" />
+		<Unit filename="../common/render/compilebl.cpp" />
+		<Unit filename="../common/render/compilebl.h" />
+		<Unit filename="../common/render/dmdmodel.cpp" />
+		<Unit filename="../common/render/dmdmodel.h" />
+		<Unit filename="../common/render/foliage.cpp" />
+		<Unit filename="../common/render/foliage.h" />
+		<Unit filename="../common/render/heightmap.cpp" />
+		<Unit filename="../common/render/heightmap.h" />
+		<Unit filename="../common/render/model.cpp" />
+		<Unit filename="../common/render/model.h" />
+		<Unit filename="../common/render/ms3d.cpp" />
+		<Unit filename="../common/render/ms3d.h" />
+		<Unit filename="../common/render/particle.cpp" />
+		<Unit filename="../common/render/particle.h" />
+		<Unit filename="../common/render/projectile.cpp" />
+		<Unit filename="../common/render/projectile.h" />
+		<Unit filename="../common/render/screenshot.cpp" />
+		<Unit filename="../common/render/screenshot.h" />
+		<Unit filename="../common/render/shader.cpp" />
+		<Unit filename="../common/render/shader.h" />
+		<Unit filename="../common/render/shadow.cpp" />
+		<Unit filename="../common/render/shadow.h" />
+		<Unit filename="../common/render/skybox.cpp" />
+		<Unit filename="../common/render/skybox.h" />
+		<Unit filename="../common/render/transaction.cpp" />
+		<Unit filename="../common/render/transaction.h" />
+		<Unit filename="../common/render/vertexarray.cpp" />
+		<Unit filename="../common/render/vertexarray.h" />
+		<Unit filename="../common/render/water.cpp" />
+		<Unit filename="../common/render/water.h" />
+		<Unit filename="../common/save/savemap.cpp" />
+		<Unit filename="../common/save/savemap.h" />
+		<Unit filename="../common/script/script.cpp" />
+		<Unit filename="../common/script/script.h" />
+		<Unit filename="../common/sim/build.cpp" />
+		<Unit filename="../common/sim/build.h" />
+		<Unit filename="../common/sim/building.cpp" />
+		<Unit filename="../common/sim/building.h" />
+		<Unit filename="../common/sim/buildingtype.cpp" />
+		<Unit filename="../common/sim/buildingtype.h" />
+		<Unit filename="../common/sim/connectable.cpp" />
+		<Unit filename="../common/sim/connectable.h" />
+		<Unit filename="../common/sim/crpipe.cpp" />
+		<Unit filename="../common/sim/crpipe.h" />
+		<Unit filename="../common/sim/deposit.cpp" />
+		<Unit filename="../common/sim/deposit.h" />
+		<Unit filename="../common/sim/labourer.cpp" />
+		<Unit filename="../common/sim/labourer.h" />
+		<Unit filename="../common/sim/order.cpp" />
+		<Unit filename="../common/sim/order.h" />
+		<Unit filename="../common/sim/player.cpp" />
+		<Unit filename="../common/sim/player.h" />
+		<Unit filename="../common/sim/powl.cpp" />
+		<Unit filename="../common/sim/powl.h" />
+		<Unit filename="../common/sim/resources.cpp" />
+		<Unit filename="../common/sim/resources.h" />
+		<Unit filename="../common/sim/road.cpp" />
+		<Unit filename="../common/sim/road.h" />
+		<Unit filename="../common/sim/selection.cpp" />
+		<Unit filename="../common/sim/selection.h" />
+		<Unit filename="../common/sim/sim.cpp" />
+		<Unit filename="../common/sim/sim.h" />
+		<Unit filename="../common/sim/unit.cpp" />
+		<Unit filename="../common/sim/unit.h" />
+		<Unit filename="../common/sim/unitmove.cpp" />
+		<Unit filename="../common/sim/unitmove.h" />
+		<Unit filename="../common/sim/unittype.cpp" />
+		<Unit filename="../common/sim/unittype.h" />
+		<Unit filename="../common/sound/sound.cpp" />
+		<Unit filename="../common/sound/sound.h" />
+		<Unit filename="../common/sys/unicode.cpp" />
+		<Unit filename="../common/sys/unicode.h" />
+		<Unit filename="../common/texture.cpp" />
+		<Unit filename="../common/texture.h" />
+		<Unit filename="../common/ustring.cpp" />
+		<Unit filename="../common/ustring.h" />
+		<Unit filename="../common/utils.cpp" />
+		<Unit filename="../common/utils.h" />
+		<Unit filename="../common/window.cpp" />
+		<Unit filename="../common/window.h" />
+		<Unit filename="../libs/objectscript/objectscript.cpp" />
+		<Unit filename="../libs/objectscript/objectscript.h" />
+		<Unit filename="../libs/objectscript/os-binder-arg-cc-functions.h" />
+		<Unit filename="../libs/objectscript/os-binder-cc-functions.h" />
+		<Unit filename="../libs/objectscript/os-binder-function.h" />
+		<Unit filename="../libs/objectscript/os-binder.h" />
+		<Unit filename="../libs/objectscript/os-heap.cpp" />
+		<Unit filename="../libs/objectscript/os-heap.h" />
+		<Unit filename="gmain.cpp" />
+		<Unit filename="gmain.h" />
+		<Unit filename="gres.h" />
+		<Unit filename="gui/editorgui.cpp" />
+		<Unit filename="gui/editorgui.h" />
+		<Unit filename="gui/ggui.cpp" />
+		<Unit filename="gui/ggui.h" />
+		<Unit filename="gui/gviewport.cpp" />
+		<Unit filename="gui/gviewport.h" />
+		<Unit filename="gui/playgui.cpp" />
+		<Unit filename="gui/playgui.h" />
+		<Unit filename="keymap.cpp" />
+		<Unit filename="keymap.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
